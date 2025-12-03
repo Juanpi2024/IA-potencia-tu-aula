@@ -37,6 +37,11 @@ const Catalog: React.FC<CatalogProps> = ({ onAddToCart }) => {
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{product.title}</h3>
                 <p className="text-gray-600 text-sm mb-4 line-clamp-3">{product.description}</p>
 
+              
+              <div className="p-6 flex-1 flex flex-col">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">{product.title}</h3>
+                <p className="text-gray-600 text-sm mb-4 line-clamp-3">{product.description}</p>
+                
                 <div className="mb-6 flex-1">
                   <h4 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">Incluye:</h4>
                   <ul className="space-y-2">

@@ -22,6 +22,8 @@ const CartSidebar: React.FC<CartSidebarProps> = ({ isOpen, onClose, items, onRem
       {/* Backdrop */}
       <div
         className="absolute inset-0 bg-gray-900 bg-opacity-50 transition-opacity"
+      <div 
+        className="absolute inset-0 bg-gray-900 bg-opacity-50 transition-opacity" 
         onClick={onClose}
       />
 
@@ -55,6 +57,7 @@ const CartSidebar: React.FC<CartSidebarProps> = ({ isOpen, onClose, items, onRem
                 <p className="text-gray-500 text-lg">Tu carrito está vacío</p>
                 <p className="text-gray-400 text-sm mt-1">¡Explora el catálogo para encontrar recursos!</p>
                 <button
+                <button 
                     onClick={onClose}
                     className="mt-6 text-primary font-medium hover:text-secondary"
                 >
@@ -84,6 +87,7 @@ const CartSidebar: React.FC<CartSidebarProps> = ({ isOpen, onClose, items, onRem
                       <div className="flex-1 flex items-end justify-between text-sm">
                         <div className="flex items-center border rounded border-gray-300">
                           <button
+                          <button 
                             className="px-2 py-1 text-gray-600 hover:bg-gray-100"
                             onClick={() => onUpdateQuantity(item.id, Math.max(1, item.quantity - 1))}
                           >
@@ -91,6 +95,7 @@ const CartSidebar: React.FC<CartSidebarProps> = ({ isOpen, onClose, items, onRem
                           </button>
                           <span className="px-2 py-1 text-gray-900 min-w-[1.5rem] text-center">{item.quantity}</span>
                           <button
+                          <button 
                             className="px-2 py-1 text-gray-600 hover:bg-gray-100"
                             onClick={() => onUpdateQuantity(item.id, item.quantity + 1)}
                           >

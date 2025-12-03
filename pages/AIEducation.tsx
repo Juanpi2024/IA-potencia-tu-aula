@@ -62,6 +62,9 @@ const AIEducation: React.FC = () => {
                  <img
                     src="https://picsum.photos/id/60/800/600"
                     alt="Profesor usando IA"
+                 <img 
+                    src="https://picsum.photos/id/60/800/600" 
+                    alt="Profesor usando IA" 
                     className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
                  />
                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
@@ -104,12 +107,16 @@ const AIEducation: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                     to="/recursos"
+                <Link 
+                    to="/recursos" 
                     className="inline-flex items-center justify-center px-6 py-3 border border-gray-300 shadow-sm text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 transition-colors"
                 >
                     Ir a Recursos Gratuitos
                 </Link>
                 <Link
                     to="/catalogo"
+                <Link 
+                    to="/catalogo" 
                     className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-secondary transition-colors shadow-lg shadow-blue-200"
                 >
                     Ver Kit Premium

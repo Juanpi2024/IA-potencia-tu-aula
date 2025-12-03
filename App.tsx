@@ -59,6 +59,7 @@ const App: React.FC = () => {
     }
   });
 
+  
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [showToast, setShowToast] = useState(false);
 
@@ -79,6 +80,7 @@ const App: React.FC = () => {
       return [...prevCart, { ...product, quantity: 1 }];
     });
 
+    
     // Show toast
     setShowToast(true);
     setIsCartOpen(true); // Auto open cart for better UX
@@ -111,6 +113,15 @@ const App: React.FC = () => {
         <CartSidebar
           isOpen={isCartOpen}
           onClose={() => setIsCartOpen(false)}
+        
+        <Navbar 
+          cartCount={totalItems} 
+          onOpenCart={() => setIsCartOpen(true)} 
+        />
+
+        <CartSidebar 
+          isOpen={isCartOpen} 
+          onClose={() => setIsCartOpen(false)} 
           items={cart}
           onRemove={removeFromCart}
           onUpdateQuantity={updateQuantity}
@@ -122,6 +133,9 @@ const App: React.FC = () => {
             <Route
               path="/catalogo"
               element={<Catalog onAddToCart={addToCart} />}
+            <Route 
+              path="/catalogo" 
+              element={<Catalog onAddToCart={addToCart} />} 
             />
             <Route path="/recursos" element={<Resources />} />
             <Route path="/ia-educativa" element={<AIEducation />} />
@@ -132,6 +146,7 @@ const App: React.FC = () => {
 
         {/* Simple Toast Notification */}
         <div
+        <div 
             className={`fixed bottom-4 right-4 bg-gray-900 text-white px-6 py-3 rounded-lg shadow-lg transform transition-all duration-300 z-50 ${
                 showToast ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0 pointer-events-none'
             }`}

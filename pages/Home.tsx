@@ -79,6 +79,9 @@ const Home: React.FC = () => {
                 <img
                   src="https://picsum.photos/id/64/600/600"
                   alt="Prof. Ana Martínez"
+                <img 
+                  src="https://picsum.photos/id/64/600/600" 
+                  alt="Prof. Ana Martínez" 
                   className="object-cover w-full h-full"
                 />
               </div>
@@ -91,6 +94,7 @@ const Home: React.FC = () => {
                 Mi misión es ayudar a educadores de todos los niveles a perder el miedo a la Inteligencia Artificial, utilizándola como una aliada para reducir la carga administrativa y potenciar la creatividad de sus estudiantes.
               </p>
 
+              
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                 <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
                   <Users className="text-accent" size={24} />
