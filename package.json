@@ -1,0 +1,32 @@
+{
+  "name": "ia-potencia-tu-aula",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.22",
+    "lucide-react": "^0.363.0",
+    "postcss": "^8.5.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.22.3",
+    "tailwindcss": "^3.4.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "jsdom": "^27.2.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vitest": "^4.0.15"
+  }
+}
