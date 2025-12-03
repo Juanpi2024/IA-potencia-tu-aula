@@ -59,6 +59,9 @@ const AIEducation: React.FC = () => {
                 </div>
             </div>
             <div className="relative rounded-2xl shadow-xl overflow-hidden group">
+                 <img
+                    src="https://picsum.photos/id/60/800/600"
+                    alt="Profesor usando IA"
                  <img 
                     src="https://picsum.photos/id/60/800/600" 
                     alt="Profesor usando IA" 
@@ -102,12 +105,16 @@ const AIEducation: React.FC = () => {
                 Descarga nuestra guía introductoria gratuita o adquiere el Kit Completo para transformar tu aula.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+                    to="/recursos"
                 <Link 
                     to="/recursos" 
                     className="inline-flex items-center justify-center px-6 py-3 border border-gray-300 shadow-sm text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 transition-colors"
                 >
                     Ir a Recursos Gratuitos
                 </Link>
+                <Link
+                    to="/catalogo"
                 <Link 
                     to="/catalogo" 
                     className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-secondary transition-colors shadow-lg shadow-blue-200"

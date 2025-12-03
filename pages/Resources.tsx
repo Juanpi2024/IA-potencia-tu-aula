@@ -11,6 +11,7 @@ const Resources: React.FC = () => {
 
   const filteredResources = FREE_RESOURCES.filter(resource => {
     const matchesCategory = activeCategory === 'Todos' || resource.category === activeCategory;
+    const matchesSearch = resource.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
     const matchesSearch = resource.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
                           resource.description.toLowerCase().includes(searchTerm.toLowerCase());
     return matchesCategory && matchesSearch;
@@ -73,6 +74,7 @@ const Resources: React.FC = () => {
                 </span>
                 <span className="text-xs text-gray-400">{resource.date}</span>
               </div>
+
               
               <div className="flex items-start gap-3 mb-2">
                 <div className="p-2 bg-gray-50 rounded-lg text-gray-600">
@@ -82,6 +84,7 @@ const Resources: React.FC = () => {
               </div>
 
               <p className="text-gray-600 text-sm mt-2 mb-6 flex-1">{resource.description}</p>
+
               
               <a
                 href={resource.downloadUrl}
@@ -99,6 +102,7 @@ const Resources: React.FC = () => {
             <div className="text-center py-20">
                 <Filter size={48} className="mx-auto text-gray-300 mb-4" />
                 <p className="text-gray-500 text-lg">No se encontraron recursos con esos criterios.</p>
+                <button
                 <button 
                     onClick={() => { setActiveCategory('Todos'); setSearchTerm(''); }}
                     className="mt-4 text-primary font-medium hover:underline"
